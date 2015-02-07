@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-int tabela[100][100];
+//inicio uma tabela pra receber as espirais até 100x100
+int tabela[101][101];
 
 void imprime(int linhas,int colunas){
 	int i=0,j=0;
@@ -52,6 +53,7 @@ void gera_espiral(int linhas,int colunas){
 
 int main(){
 	int i=0,j=0,linhas=0,colunas=0;
+	printf("Digite o numero de linhas e colunas/n");
 	scanf("%d %d",&linhas,&colunas);
 	memset(*tabela,0xff,sizeof(tabela));
 	for(i=0;i<linhas;i++){
