@@ -53,7 +53,7 @@ void gera_espiral(int linhas,int colunas){
 
 int main(){
 	int i=0,j=0,linhas=0,colunas=0;
-	printf("Digite o numero de linhas e colunas/n");
+	printf("Digite o numero de linhas e colunas\n");
 	scanf("%d %d",&linhas,&colunas);
 	memset(*tabela,0xff,sizeof(tabela));
 	for(i=0;i<linhas;i++){
